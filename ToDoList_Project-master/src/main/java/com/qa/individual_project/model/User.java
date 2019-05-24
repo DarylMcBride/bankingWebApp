@@ -16,13 +16,13 @@ public class User {
 	private String username;
 	@Column(nullable = false)
 	private String password;
+	@Column (nullable = false)
+	private double balance;
 	
-	public User() {
-	}
-	
-	public User(String username, String password) {
+	public User(String username, String password, double balance) {
 		this.username = username;
 		this.password = password;
+		this.balance = balance;
 	}
 	
 	public int getId() {
@@ -42,5 +42,13 @@ public class User {
 	}
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
 	}
 }
