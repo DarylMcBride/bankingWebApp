@@ -1,6 +1,5 @@
 package com.qa.individual_project.controller;
 
-import java.util.List;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.qa.individual_project.model.User;
 import com.qa.individual_project.repository.UsersRepository;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("api/v1/")
